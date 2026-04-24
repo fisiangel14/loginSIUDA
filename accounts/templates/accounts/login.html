@@ -8,6 +8,8 @@
     <label for="password">Contraseña:</label>
     <input type="password" id="password" name="password">
 
+    <input type="hidden" name="next" value="{{ next|default:'' }}">
+
     <button type="submit">Iniciar sesión</button>
     {% if error %}
         <p style="color: red;">{{ error }}</p>
